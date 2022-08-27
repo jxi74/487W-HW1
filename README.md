@@ -16,3 +16,11 @@ that access the Student Unix Network (SUN) Lab. Their initial requirements are a
     • The system must be able to be extended in the future to support multiple types of users 
       (students, faculty members, staff members, janitors) and the following additional operations: 
       activate, suspend, and reactivate an ID.  
+
+
+Initial Requirements:
+• SQL database needs following information stored: sID, name, and timestamp.
+• Records will be stored for 5 years. Solved by comparing timestamp date when card is swiped to current date. (In JAVA)
+• GUI required for an "authorized person" (Faculty, Staff, Janitors) to see the history (database) and to browse list of student. FILTERED by
+  date, sID, and timestamp.
+• System (GUI in JAVA) must have the ability for any authorized person to active, suspend, and reactivate a sID.
