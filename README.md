@@ -23,7 +23,7 @@ Initial Requirements:
     
     • Records will be stored for 5 years. Solved by comparing timestamp date when card is swiped to current date. (In JAVA)
     
-    • GUI required for an "authorized person" (Faculty, Staff, Janitors) to see the history (database) and to browse list of student. FILTERED by
-      date, sID, and timestamp.
+    • GUI required for an "authorized person" (Faculty, Staff, Janitors) to see the history (database) and to browse list of student.
+      FILTERED by date, sID, and timestamp.
   
     • System (GUI in JAVA) must have the ability for any authorized person to active, suspend, and reactivate a sID.
