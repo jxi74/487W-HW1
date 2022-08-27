@@ -19,6 +19,7 @@ that access the Student Unix Network (SUN) Lab. Their initial requirements are a
 
 
 Initial Requirements:
+    
     • SQL database needs following information stored: sID, name, and timestamp.
     
     • Records will be stored for 5 years. Solved by comparing timestamp date when card is swiped to current date. (In JAVA)
