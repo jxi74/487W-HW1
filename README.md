@@ -27,4 +27,4 @@ Initial Requirements:
     • GUI required for an "authorized person" (Faculty, Staff, Janitors) to see the history (database) and to browse list of student.
       FILTERED by date, sID, and timestamp.
   
-    • System (GUI in JAVA) must have the ability for any authorized person to active, suspend, and reactivate a sID.
+    • (WILL BE IMPLEMENTED IN FUTURE) System (GUI in JAVA) must have the ability for any authorized person to active, suspend, and reactivate a sID.
