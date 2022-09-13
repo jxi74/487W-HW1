@@ -59,8 +59,8 @@ public class DatabaseGUI2 {
 	}
 	
 	public static void swipeAction(ActionEvent event) throws Exception {
-		String user = "root";         // Sets username
-		String pass = "Pennstate123";		   // Sets password: Security issue for anyone who reads code
+		String user = "root";  // Sets username
+		String pass = "Pennstate123";	// Sets password: Security issue for anyone who reads code
 		conn = DriverManager.getConnection(url, user, pass);  //Attempts connection to database based on given url, username, and password
 		
 		Timestamp currTimeStamp = new Timestamp(System.currentTimeMillis());
@@ -73,7 +73,7 @@ public class DatabaseGUI2 {
 	public static void IDAction(ActionEvent event) throws Exception {
 		Statement stmt = conn.createStatement();
 		ResultSet rID = stmt.executeQuery("SELECT * FROM SunLabUser " + "WHERE sID = '" + AdminStudentID.getText() + 
-															"' AND EXTRACT(year FROM time_stamp) > '"+ year_check+"'");
+								"' AND EXTRACT(year FROM time_stamp) > '"+ year_check+"'");
 		
 		while (rID.next() ) {																					
 			// Adds to the GUI each column based on its type (String, int, etc.)									
@@ -86,7 +86,7 @@ public class DatabaseGUI2 {
 	public static void dateAction(ActionEvent event) throws Exception {
 		Statement stmt = conn.createStatement();
 		ResultSet rDate = stmt.executeQuery("SELECT * FROM SunLabUser " + "WHERE date(time_stamp) = '" + AdminDate.getText() + 
-															"' AND EXTRACT(year FROM time_stamp) > '"+ year_check+"'");
+									"' AND EXTRACT(year FROM time_stamp) > '"+ year_check+"'");
 		
 		while (rDate.next() ) {																					
 			// Adds to the GUI each column based on its type (String, int, etc.)									
@@ -99,7 +99,7 @@ public class DatabaseGUI2 {
 	public static void rangeAction(ActionEvent event) throws Exception {
 		Statement stmt = conn.createStatement();
 		ResultSet rRange = stmt.executeQuery("SELECT * FROM SunLabUser " + "WHERE date(time_stamp) BETWEEN '" + AdminRange1.getText() + 
-															"' AND '" + AdminRange2.getText() + "' AND EXTRACT(year FROM time_stamp) > '"+ year_check+"'");
+						"' AND '" + AdminRange2.getText() + "' AND EXTRACT(year FROM time_stamp) > '"+ year_check+"'");
 		
 		while (rRange.next() ) {																					
 			// Adds to the GUI each column based on its type (String, int, etc.)									
@@ -111,8 +111,8 @@ public class DatabaseGUI2 {
 	
 	
 	public static void loginAction(ActionEvent event) throws Exception {
-		String uservalue = username.getText();          // Sets username inputed from GUI
-		String passvalue = password.getText();		   // Sets password inputed from GUI
+		String uservalue = username.getText();  // Sets username inputed from GUI
+		String passvalue = password.getText();	// Sets password inputed from GUI
 		conn = DriverManager.getConnection(url, uservalue, passvalue);  //Attempts connection to database based on given url, username, and password
 		System.out.println("Connected ");  //Prints this line if connection is successful
 		adminFrame.add(new JLabel("Connected ")); //Displays the word "Connected" in GUI
